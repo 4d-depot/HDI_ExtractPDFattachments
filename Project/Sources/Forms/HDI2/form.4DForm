@@ -1,0 +1,316 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 1200,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 800,
+	"windowMaxHeight": 32000,
+	"width": 1000,
+	"height": 800,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 960,
+					"height": 760,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.tabs",
+					"dataSourceTypeHint": "object",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Tab Control.4dm"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 0,
+					"left": 500,
+					"width": 0,
+					"height": 848,
+					"visibility": "hidden",
+					"strokeDashArray": [
+						6,
+						2
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"RTA_Text": {
+					"type": "input",
+					"top": 80,
+					"left": 60,
+					"width": 880,
+					"height": 660,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": false,
+					"showSelection": true,
+					"styledText": true,
+					"multiline": "yes",
+					"scrollbarVertical": "hidden",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"dataSource": "Form:C1466.doc",
+					"enterable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAlign": "center"
+				}
+			}
+		},
+		{
+			"objects": {
+				"RTA_Text1": {
+					"type": "input",
+					"top": 80,
+					"left": 60,
+					"width": 880,
+					"height": 120,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"showSelection": true,
+					"styledText": true,
+					"multiline": "yes",
+					"scrollbarVertical": "hidden",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"dataSource": "Form:C1466.doc",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"textAlign": "center"
+				},
+				"Button": {
+					"type": "button",
+					"text": "Load sample",
+					"top": 242,
+					"left": 109,
+					"width": 139,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm",
+					"focusable": false
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 109,
+					"top": 283,
+					"width": 780,
+					"height": 99,
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"dataSource": "Form:C1466.attachments",
+					"listboxType": "collection",
+					"currentItemSource": "Form:C1466.currentAttachment",
+					"method": "ObjectMethods/List Box.4dm",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"hideFocusRing": true,
+					"headerHeight": "20px",
+					"rowHeight": "20px",
+					"verticalLineStroke": "transparent",
+					"columns": [
+						{
+							"header": {
+								"text": "name",
+								"name": "Header1",
+								"fontWeight": "bold"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"dataSource": "This:C1470.name",
+							"textAlign": "center",
+							"width": 180
+						},
+						{
+							"header": {
+								"name": "Header2",
+								"text": "extension",
+								"fontWeight": "bold"
+							},
+							"name": "Column2",
+							"footer": {
+								"name": "Footer2"
+							},
+							"dataSource": "This:C1470.extension",
+							"textAlign": "center",
+							"width": 100
+						},
+						{
+							"header": {
+								"name": "Header3",
+								"text": "fullName",
+								"fontWeight": "bold"
+							},
+							"name": "Column3",
+							"footer": {
+								"name": "Footer3"
+							},
+							"dataSource": "This:C1470.fullName",
+							"textAlign": "center",
+							"width": 200
+						},
+						{
+							"header": {
+								"name": "Header4",
+								"text": "mimeType",
+								"fontWeight": "bold"
+							},
+							"name": "Column4",
+							"footer": {
+								"name": "Footer4"
+							},
+							"dataSource": "This:C1470.mimeType",
+							"textAlign": "center",
+							"width": 120
+						},
+						{
+							"header": {
+								"name": "Header5",
+								"text": "size",
+								"fontWeight": "bold"
+							},
+							"name": "Column5",
+							"footer": {
+								"name": "Footer5"
+							},
+							"dataSource": "This:C1470.size",
+							"dataSourceTypeHint": "number",
+							"width": 100
+						},
+						{
+							"header": {
+								"name": "Header6",
+								"text": "success",
+								"fontWeight": "bold"
+							},
+							"name": "Column6",
+							"footer": {
+								"name": "Footer6"
+							},
+							"dataSource": "This:C1470.success",
+							"dataSourceTypeHint": "boolean",
+							"textAlign": "center",
+							"width": 80
+						}
+					]
+				},
+				"PictContainer": {
+					"type": "input",
+					"left": 109,
+					"top": 416,
+					"width": 360,
+					"height": 340,
+					"dataSource": "Form:C1466.pictureContainer",
+					"dataSourceTypeHint": "picture",
+					"enterable": false,
+					"focusable": false,
+					"pictureFormat": "proportionalCenter"
+				},
+				"PictContainer1": {
+					"type": "input",
+					"left": 530,
+					"top": 416,
+					"width": 360,
+					"height": 340,
+					"dataSource": "Form:C1466.textContainer",
+					"dataSourceTypeHint": "text",
+					"enterable": false,
+					"focusable": false
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Load…",
+					"top": 242,
+					"left": 268,
+					"width": 139,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm",
+					"focusable": false
+				},
+				"Text": {
+					"type": "text",
+					"text": "Graphic content",
+					"top": 392,
+					"left": 109,
+					"width": 139,
+					"height": 16,
+					"fontStyle": "italic"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Text content",
+					"top": 392,
+					"left": 530,
+					"width": 139,
+					"height": 16,
+					"fontStyle": "italic"
+				}
+			},
+			"entryOrder": [
+				"RTA_Text1",
+				"Button",
+				"List Box",
+				"PictContainer",
+				"PictContainer1",
+				"Button1"
+			]
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"geometryStamp": 7505,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"menuBar": "Menu Bar #1"
+}

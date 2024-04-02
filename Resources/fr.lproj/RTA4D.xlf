@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+   <!--   
+Translation file.
+This file is distributed under the same license as the product package.-->
+
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" source-language="en" target-language="fr">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+         </prop-group>
+      </header>
+      <body>
+         <group id="1" resname="TIPS">
+            <trans-unit id="1" resname="InsertURL">
+               <source>Insert URL</source>
+               <target>Insérer URL</target>
+            </trans-unit>
+            <trans-unit id="2" resname="InsertExpression">
+               <source>Insert Expression</source>
+               <target>Insérer expression</target>
+            </trans-unit>
+            <trans-unit id="3" resname="DisplayExpression">
+               <source>Display expressions</source>
+               <target>Afficher les expressions</target>
+            </trans-unit>
+            <trans-unit id="4" resname="ComputeExpression">
+               <source>Compute expressions</source>
+               <target>Calculer les expressions</target>
+            </trans-unit>
+            <trans-unit id="5" resname="SetFontColor">
+               <source>Set Font Color</source>
+               <target>Couleur de texte</target>
+            </trans-unit>
+            <trans-unit id="6" resname="SetBgndColor">
+               <source>Set Background Color</source>
+               <target>Couleur d'arrière-plan</target>
+            </trans-unit>
+            <trans-unit id="10" resname="FreezeExpression">
+               <source>Freeze expressions</source>
+               <target>Figer expressions</target>
+            </trans-unit>
+
+
+
+       <trans-unit id="C8Wsy43/ujRB778hdZvH1w" resname="bold">
+          <source>Bold</source>
+          <target>Gras</target>
+        </trans-unit>
+        <trans-unit id="cEo5vs49yB1ZwEbYr1xONw" resname="italic">
+          <source>Italic</source>
+          <target>Italique</target>
+        </trans-unit>
+        <trans-unit id="CJ3FnhEpbQLw70i97DXISA" resname="underline">
+          <source>Underline</source>
+          <target>Soulign√©</target>
+        </trans-unit>
+        <trans-unit id="FF84ifbM0/hfJWYZADoijw" resname="strikethrough">
+          <source>Strikethrough</source>
+          <target>Barré</target>
+        </trans-unit>
+        <trans-unit id="14" resname="textColor">
+          <source>Text Color</source>
+          <target>Couleur du texte</target>
+        </trans-unit>
+        <trans-unit id="13" resname="backgroundColor">
+          <source>Background color</source>
+          <target>Couleur d'arrière-plan</target>
+        </trans-unit>
+        <trans-unit id="20" resname="clearStyle">
+          <source>Clear style</source>
+          <target>Effacer le style</target>
+        </trans-unit> 
+
+
+         </group>
+      </body>
+   </file>
+</xliff>

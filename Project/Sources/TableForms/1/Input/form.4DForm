@@ -1,0 +1,561 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 218,
+	"markerBreak": 218,
+	"markerFooter": 228,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line6": {
+					"type": "line",
+					"top": 77,
+					"left": 19,
+					"width": 955,
+					"sizingX": "grow",
+					"stroke": "automatic",
+					"strokeWidth": 0,
+					"height": 1
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 84,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 147,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 210,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 273,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 336,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 399,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Field": {
+					"type": "input",
+					"top": 98,
+					"left": 218,
+					"width": 229,
+					"height": 17,
+					"dataSource": "[INFO:1]PageNumber:4",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 128,
+					"left": 218,
+					"width": 229,
+					"height": 17,
+					"dataSource": "[INFO:1]TabTitle:3",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 98,
+					"left": 36,
+					"width": 150,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Page number:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 128,
+					"left": 36,
+					"width": 150,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Tab Title:"
+				},
+				"RTA_Standard": {
+					"type": "button",
+					"text": "",
+					"top": 197,
+					"left": 389,
+					"width": 25,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/RTA4D/Icons/Clear_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/RTA_Standard.4dm",
+					"tooltip": ":xliff:clearStyle"
+				},
+				"RTA_FontColor": {
+					"type": "button",
+					"text": "",
+					"top": 197,
+					"left": 514,
+					"width": 25,
+					"height": 25,
+					"events": [
+						"onLoad",
+						"onClick",
+						"onUnload"
+					],
+					"icon": "/RESOURCES/RTA4D/Icons/TextColor_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/RTA_FontColor.4dm",
+					"tooltip": ":xliff:SetFontColor"
+				},
+				"RTA_BgndColor": {
+					"type": "button",
+					"text": "",
+					"top": 197,
+					"left": 539,
+					"width": 25,
+					"height": 25,
+					"events": [
+						"onLoad",
+						"onClick",
+						"onUnload"
+					],
+					"icon": "/RESOURCES/RTA4D/Icons/BackgroundColor_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/RTA_BgndColor.4dm",
+					"tooltip": ":xliff:SetBgndColor"
+				},
+				"RTA_URL": {
+					"type": "button",
+					"text": "",
+					"top": 197,
+					"left": 584,
+					"width": 25,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/RTA4D/Icons/Hyperlinks_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/RTA_URL.4dm",
+					"dataSource": "",
+					"tooltip": ":xliff:InsertURL"
+				},
+				"RTA_Function": {
+					"type": "button",
+					"text": "",
+					"top": 197,
+					"left": 609,
+					"width": 25,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/RTA4D/Icons/InsertExpression_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/RTA_Function.4dm",
+					"tooltip": ":xliff:InsertExpression"
+				},
+				"RTA_Compute": {
+					"type": "button",
+					"text": "",
+					"top": 197,
+					"left": 684,
+					"width": 25,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/RTA4D/Icons/ComputeReference_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"action": "",
+					"tooltip": ":xliff:ComputeExpression",
+					"method": "ObjectMethods/RTA_Compute.4dm"
+				},
+				"RTA_Freeze": {
+					"type": "button",
+					"text": "",
+					"top": 197,
+					"left": 709,
+					"width": 25,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/RTA4D/Icons/FreezeDocument_24.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"action": "",
+					"tooltip": ":xliff:FreezeExpression",
+					"method": "ObjectMethods/RTA_Freeze.4dm"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 197,
+					"left": 574,
+					"width": 1,
+					"height": 25,
+					"stroke": "automatic"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 197,
+					"left": 644,
+					"width": 1,
+					"height": 25,
+					"stroke": "automatic"
+				},
+				"RTA_Bold": {
+					"type": "checkbox",
+					"top": 197,
+					"left": 414,
+					"width": 25,
+					"height": 25,
+					"tooltip": ":xliff:bold",
+					"action": "fontBold",
+					"focusable": false,
+					"icon": "/RESOURCES/RTA4D/Icons/Bold_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "b"
+				},
+				"RTA_Italic": {
+					"type": "checkbox",
+					"top": 197,
+					"left": 439,
+					"width": 25,
+					"height": 25,
+					"tooltip": ":xliff:italic",
+					"action": "fontItalic",
+					"focusable": false,
+					"icon": "/RESOURCES/RTA4D/Icons/Italic_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "i"
+				},
+				"RTA_Underline": {
+					"type": "checkbox",
+					"top": 197,
+					"left": 464,
+					"width": 25,
+					"height": 25,
+					"tooltip": ":xliff:underline",
+					"action": "fontUnderline",
+					"focusable": false,
+					"icon": "/RESOURCES/RTA4D/Icons/Underline_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "u"
+				},
+				"RTA_Strike": {
+					"type": "checkbox",
+					"top": 197,
+					"left": 489,
+					"width": 25,
+					"height": 25,
+					"tooltip": ":xliff:strikethrough",
+					"action": "fontLinethrough",
+					"focusable": false,
+					"icon": "/RESOURCES/RTA4D/Icons/Strikethrough_24.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					]
+				},
+				"RTA_DisplayRef": {
+					"type": "checkbox",
+					"top": 197,
+					"left": 654,
+					"width": 25,
+					"height": 25,
+					"tooltip": ":xliff:DisplayExpression",
+					"action": "visibleReferences",
+					"focusable": false,
+					"icon": "/RESOURCES/RTA4D/Icons/Show4DExpression_24.png",
+					"iconFrames": 4,
+					"style": "toolbar"
+				},
+				"RTA_FontNames": {
+					"type": "dropdown",
+					"top": 199,
+					"left": 70,
+					"width": 220,
+					"height": 20,
+					"method": "ObjectMethods/RTA_FontNames.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"RTA_FontSizes": {
+					"type": "dropdown",
+					"top": 199,
+					"left": 300,
+					"width": 65,
+					"height": 20,
+					"dataSourceTypeHint": "arrayNumber",
+					"numberFormat": "###0;--;",
+					"method": "ObjectMethods/RTA_FontSizes.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"RTA_Text": {
+					"type": "input",
+					"top": 241,
+					"left": 70,
+					"width": 666,
+					"height": 440,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"showSelection": true,
+					"styledText": true,
+					"multiline": "yes",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/RTA_Text.4dm",
+					"events": [
+						"onLoad",
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"dataSource": "[INFO:1]Description:2",
+					"textAlign": "center"
+				},
+				"Line": {
+					"type": "line",
+					"top": 227,
+					"left": 60,
+					"width": 700,
+					"sizingX": "grow",
+					"stroke": "#777777"
+				},
+				"RTA_FontSample": {
+					"type": "rectangle",
+					"top": 215,
+					"left": 516,
+					"width": 21,
+					"height": 5,
+					"fill": "#000000",
+					"stroke": "transparent"
+				},
+				"RTA_BgndSample": {
+					"type": "rectangle",
+					"top": 215,
+					"left": 541,
+					"width": 21,
+					"height": 5,
+					"stroke": "transparent"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 531,
+					"left": 280,
+					"width": 355,
+					"height": 129,
+					"visibility": "hidden",
+					"stroke": "#405EFF",
+					"text": "This rich text area is a DYNAMIC VARIABLE.\r\rIt can be associated to a FIELD or a VARIABLE but the NAME of the object must NOT be modified!\r\r(Keep it's name \"RTA_Text\" in order to keep the buttons work fine)"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 48,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
