@@ -279,89 +279,6 @@
 					"method": "ObjectMethods/RTA_BgndColor.4dm",
 					"tooltip": ":xliff:SetBgndColor"
 				},
-				"RTA_URL": {
-					"type": "button",
-					"text": "",
-					"top": 197,
-					"left": 584,
-					"width": 25,
-					"height": 25,
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/RTA4D/Icons/Hyperlinks_24.png",
-					"iconFrames": 4,
-					"style": "toolbar",
-					"method": "ObjectMethods/RTA_URL.4dm",
-					"dataSource": "",
-					"tooltip": ":xliff:InsertURL"
-				},
-				"RTA_Function": {
-					"type": "button",
-					"text": "",
-					"top": 197,
-					"left": 609,
-					"width": 25,
-					"height": 25,
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/RTA4D/Icons/InsertExpression_24.png",
-					"iconFrames": 4,
-					"style": "toolbar",
-					"method": "ObjectMethods/RTA_Function.4dm",
-					"tooltip": ":xliff:InsertExpression"
-				},
-				"RTA_Compute": {
-					"type": "button",
-					"text": "",
-					"top": 197,
-					"left": 684,
-					"width": 25,
-					"height": 25,
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/RTA4D/Icons/ComputeReference_24.png",
-					"iconFrames": 4,
-					"style": "toolbar",
-					"action": "",
-					"tooltip": ":xliff:ComputeExpression",
-					"method": "ObjectMethods/RTA_Compute.4dm"
-				},
-				"RTA_Freeze": {
-					"type": "button",
-					"text": "",
-					"top": 197,
-					"left": 709,
-					"width": 25,
-					"height": 25,
-					"events": [
-						"onClick"
-					],
-					"icon": "/RESOURCES/RTA4D/Icons/FreezeDocument_24.png",
-					"iconFrames": 4,
-					"style": "toolbar",
-					"action": "",
-					"tooltip": ":xliff:FreezeExpression",
-					"method": "ObjectMethods/RTA_Freeze.4dm"
-				},
-				"Line1": {
-					"type": "line",
-					"top": 197,
-					"left": 574,
-					"width": 1,
-					"height": 25,
-					"stroke": "automatic"
-				},
-				"Line2": {
-					"type": "line",
-					"top": 197,
-					"left": 644,
-					"width": 1,
-					"height": 25,
-					"stroke": "automatic"
-				},
 				"RTA_Bold": {
 					"type": "checkbox",
 					"top": 197,
@@ -445,19 +362,6 @@
 						"onClick"
 					]
 				},
-				"RTA_DisplayRef": {
-					"type": "checkbox",
-					"top": 197,
-					"left": 654,
-					"width": 25,
-					"height": 25,
-					"tooltip": ":xliff:DisplayExpression",
-					"action": "visibleReferences",
-					"focusable": false,
-					"icon": "/RESOURCES/RTA4D/Icons/Show4DExpression_24.png",
-					"iconFrames": 4,
-					"style": "toolbar"
-				},
 				"RTA_FontNames": {
 					"type": "dropdown",
 					"top": 199,
@@ -532,16 +436,6 @@
 					"width": 21,
 					"height": 5,
 					"stroke": "transparent"
-				},
-				"Text2": {
-					"type": "text",
-					"top": 531,
-					"left": 280,
-					"width": 355,
-					"height": 129,
-					"visibility": "hidden",
-					"stroke": "#405EFF",
-					"text": "This rich text area is a DYNAMIC VARIABLE.\r\rIt can be associated to a FIELD or a VARIABLE but the NAME of the object must NOT be modified!\r\r(Keep it's name \"RTA_Text\" in order to keep the buttons work fine)"
 				}
 			}
 		}
@@ -550,7 +444,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 48,
+	"geometryStamp": 50,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

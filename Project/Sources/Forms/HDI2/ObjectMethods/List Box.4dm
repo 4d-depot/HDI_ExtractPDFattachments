@@ -1,4 +1,6 @@
 var $pict : Picture
+var $c : Object
+var $picture : Picture
 
 Form:C1466.pictureContainer:=$pict
 Form:C1466.textContainer:=""
@@ -6,7 +8,6 @@ Form:C1466.textContainer:=""
 If (Form:C1466.currentAttachment#Null:C1517)
 	
 	$c:=Form:C1466.currentAttachment
-	
 	
 	Case of 
 		: ($c.mimeType="text/xml")

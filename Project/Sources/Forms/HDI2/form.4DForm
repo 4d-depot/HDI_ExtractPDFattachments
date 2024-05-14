@@ -58,10 +58,10 @@
 			"objects": {
 				"RTA_Text": {
 					"type": "input",
-					"top": 80,
+					"top": 60,
 					"left": 60,
 					"width": 880,
-					"height": 660,
+					"height": 710,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"hideFocusRing": false,
@@ -88,10 +88,10 @@
 			"objects": {
 				"RTA_Text1": {
 					"type": "input",
-					"top": 80,
+					"top": 70,
 					"left": 60,
 					"width": 880,
-					"height": 120,
+					"height": 130,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"hideFocusRing": true,
@@ -115,9 +115,9 @@
 				"Button": {
 					"type": "button",
 					"text": "Load sample",
-					"top": 242,
-					"left": 109,
-					"width": 139,
+					"top": 220,
+					"left": 100,
+					"width": 140,
 					"height": 27,
 					"events": [
 						"onClick"
@@ -127,9 +127,9 @@
 				},
 				"List Box": {
 					"type": "listbox",
-					"left": 109,
-					"top": 283,
-					"width": 780,
+					"left": 100,
+					"top": 263,
+					"width": 800,
 					"height": 99,
 					"events": [
 						"onClick",
@@ -158,7 +158,9 @@
 							},
 							"dataSource": "This:C1470.name",
 							"textAlign": "center",
-							"width": 180
+							"width": 200,
+							"enterable": false,
+							"resizable": false
 						},
 						{
 							"header": {
@@ -172,7 +174,9 @@
 							},
 							"dataSource": "This:C1470.extension",
 							"textAlign": "center",
-							"width": 100
+							"width": 100,
+							"enterable": false,
+							"resizable": false
 						},
 						{
 							"header": {
@@ -186,7 +190,9 @@
 							},
 							"dataSource": "This:C1470.fullName",
 							"textAlign": "center",
-							"width": 200
+							"width": 200,
+							"enterable": false,
+							"resizable": false
 						},
 						{
 							"header": {
@@ -200,7 +206,9 @@
 							},
 							"dataSource": "This:C1470.mimeType",
 							"textAlign": "center",
-							"width": 120
+							"width": 120,
+							"enterable": false,
+							"resizable": false
 						},
 						{
 							"header": {
@@ -214,7 +222,9 @@
 							},
 							"dataSource": "This:C1470.size",
 							"dataSourceTypeHint": "number",
-							"width": 100
+							"width": 100,
+							"enterable": false,
+							"resizable": false
 						},
 						{
 							"header": {
@@ -229,14 +239,16 @@
 							"dataSource": "This:C1470.success",
 							"dataSourceTypeHint": "boolean",
 							"textAlign": "center",
-							"width": 80
+							"width": 80,
+							"enterable": false,
+							"resizable": false
 						}
 					]
 				},
 				"PictContainer": {
 					"type": "input",
 					"left": 109,
-					"top": 416,
+					"top": 396,
 					"width": 360,
 					"height": 340,
 					"dataSource": "Form:C1466.pictureContainer",
@@ -247,8 +259,8 @@
 				},
 				"PictContainer1": {
 					"type": "input",
-					"left": 530,
-					"top": 416,
+					"left": 540,
+					"top": 396,
 					"width": 360,
 					"height": 340,
 					"dataSource": "Form:C1466.textContainer",
@@ -258,10 +270,10 @@
 				},
 				"Button1": {
 					"type": "button",
-					"text": "Load…",
-					"top": 242,
-					"left": 268,
-					"width": 139,
+					"text": "Load any PDF without attachment",
+					"top": 220,
+					"left": 260,
+					"width": 260,
 					"height": 27,
 					"events": [
 						"onClick"
@@ -271,21 +283,94 @@
 				},
 				"Text": {
 					"type": "text",
-					"text": "Graphic content",
-					"top": 392,
+					"text": "Graphic content: pictures and pdf (mac only)",
+					"top": 372,
 					"left": 109,
-					"width": 139,
+					"width": 359,
 					"height": 16,
 					"fontStyle": "italic"
 				},
 				"Text1": {
 					"type": "text",
 					"text": "Text content",
-					"top": 392,
-					"left": 530,
-					"width": 139,
+					"top": 372,
+					"left": 540,
+					"width": 359,
 					"height": 16,
 					"fontStyle": "italic"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Manage error",
+					"top": 220,
+					"left": 590,
+					"width": 140,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm",
+					"focusable": false
+				},
+				"Texte": {
+					"type": "text",
+					"text": "(Select a NON pdf file)",
+					"top": 225,
+					"left": 739,
+					"width": 210,
+					"height": 16
+				},
+				"Image statique1": {
+					"type": "picture",
+					"top": 244,
+					"left": 154,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomLeft.png",
+					"pictureFormat": "scaled"
+				},
+				"Image statique2": {
+					"type": "picture",
+					"top": 352,
+					"left": 479,
+					"width": 32,
+					"height": 32,
+					"picture": "/RESOURCES/Images/Arrows/ArrowBottomLeft.png",
+					"pictureFormat": "scaled"
+				},
+				"Case à cocher": {
+					"type": "checkbox",
+					"text": "Trace code",
+					"top": 750,
+					"left": 860,
+					"width": 120,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.trace"
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "①",
+					"top": 215,
+					"left": 40,
+					"width": 32,
+					"height": 37,
+					"fontSize": 32,
+					"stroke": "#1e90ff"
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "②",
+					"top": 294,
+					"left": 40,
+					"width": 32,
+					"height": 37,
+					"fontSize": 32,
+					"stroke": "#1e90ff"
 				}
 			},
 			"entryOrder": [
@@ -294,7 +379,9 @@
 				"List Box",
 				"PictContainer",
 				"PictContainer1",
-				"Button1"
+				"Button1",
+				"Button2",
+				"Case à cocher"
 			]
 		}
 	],
@@ -309,7 +396,7 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 7505,
+	"geometryStamp": 7779,
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
 	"menuBar": "Menu Bar #1"
