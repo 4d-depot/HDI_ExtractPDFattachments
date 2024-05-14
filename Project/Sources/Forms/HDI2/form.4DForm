@@ -58,7 +58,7 @@
 			"objects": {
 				"RTA_Text": {
 					"type": "input",
-					"top": 60,
+					"top": 70,
 					"left": 60,
 					"width": 880,
 					"height": 710,
@@ -396,7 +396,7 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 7779,
+	"geometryStamp": 7782,
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
 	"menuBar": "Menu Bar #1"
