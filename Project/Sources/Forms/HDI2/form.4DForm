@@ -116,7 +116,7 @@
 					"type": "button",
 					"text": "Load sample",
 					"top": 220,
-					"left": 100,
+					"left": 200,
 					"width": 140,
 					"height": 27,
 					"events": [
@@ -127,9 +127,9 @@
 				},
 				"List Box": {
 					"type": "listbox",
-					"left": 100,
+					"left": 200,
 					"top": 263,
-					"width": 800,
+					"width": 760,
 					"height": 99,
 					"events": [
 						"onClick",
@@ -158,7 +158,7 @@
 							},
 							"dataSource": "This:C1470.name",
 							"textAlign": "center",
-							"width": 200,
+							"width": 190,
 							"enterable": false,
 							"resizable": false
 						},
@@ -174,7 +174,7 @@
 							},
 							"dataSource": "This:C1470.extension",
 							"textAlign": "center",
-							"width": 100,
+							"width": 90,
 							"enterable": false,
 							"resizable": false
 						},
@@ -190,7 +190,7 @@
 							},
 							"dataSource": "This:C1470.fullName",
 							"textAlign": "center",
-							"width": 200,
+							"width": 190,
 							"enterable": false,
 							"resizable": false
 						},
@@ -206,7 +206,7 @@
 							},
 							"dataSource": "This:C1470.mimeType",
 							"textAlign": "center",
-							"width": 120,
+							"width": 110,
 							"enterable": false,
 							"resizable": false
 						},
@@ -222,7 +222,7 @@
 							},
 							"dataSource": "This:C1470.size",
 							"dataSourceTypeHint": "number",
-							"width": 100,
+							"width": 90,
 							"enterable": false,
 							"resizable": false
 						},
@@ -247,7 +247,7 @@
 				},
 				"PictContainer": {
 					"type": "input",
-					"left": 109,
+					"left": 200,
 					"top": 396,
 					"width": 360,
 					"height": 340,
@@ -259,7 +259,7 @@
 				},
 				"PictContainer1": {
 					"type": "input",
-					"left": 540,
+					"left": 600,
 					"top": 396,
 					"width": 360,
 					"height": 340,
@@ -270,9 +270,9 @@
 				},
 				"Button1": {
 					"type": "button",
-					"text": "Load any PDF without attachment",
+					"text": "Load any PDF without attachment…",
 					"top": 220,
-					"left": 260,
+					"left": 360,
 					"width": 260,
 					"height": 27,
 					"events": [
@@ -285,7 +285,7 @@
 					"type": "text",
 					"text": "Graphic content: pictures and pdf (mac only)",
 					"top": 372,
-					"left": 109,
+					"left": 200,
 					"width": 359,
 					"height": 16,
 					"fontStyle": "italic"
@@ -294,7 +294,7 @@
 					"type": "text",
 					"text": "Text content",
 					"top": 372,
-					"left": 540,
+					"left": 600,
 					"width": 359,
 					"height": 16,
 					"fontStyle": "italic"
@@ -303,7 +303,7 @@
 					"type": "button",
 					"text": "Manage error",
 					"top": 220,
-					"left": 590,
+					"left": 650,
 					"width": 140,
 					"height": 27,
 					"events": [
@@ -316,14 +316,14 @@
 					"type": "text",
 					"text": "(Select a NON pdf file)",
 					"top": 225,
-					"left": 739,
-					"width": 210,
+					"left": 799,
+					"width": 160,
 					"height": 16
 				},
 				"Image statique1": {
 					"type": "picture",
 					"top": 244,
-					"left": 154,
+					"left": 214,
 					"width": 32,
 					"height": 32,
 					"picture": "/RESOURCES/Images/Arrows/ArrowBottomLeft.png",
@@ -332,7 +332,7 @@
 				"Image statique2": {
 					"type": "picture",
 					"top": 352,
-					"left": 479,
+					"left": 569,
 					"width": 32,
 					"height": 32,
 					"picture": "/RESOURCES/Images/Arrows/ArrowBottomLeft.png",
@@ -356,20 +356,40 @@
 					"type": "text",
 					"text": "①",
 					"top": 215,
-					"left": 40,
+					"left": 35,
 					"width": 32,
-					"height": 37,
+					"height": 32,
 					"fontSize": 32,
 					"stroke": "#1e90ff"
 				},
 				"Texte2": {
 					"type": "text",
 					"text": "②",
-					"top": 294,
-					"left": 40,
+					"top": 290,
+					"left": 35,
 					"width": 32,
-					"height": 37,
+					"height": 32,
 					"fontSize": 32,
+					"stroke": "#1e90ff"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Select a row and see it's content!\r(if possible)",
+					"top": 290,
+					"left": 75,
+					"width": 110,
+					"height": 66,
+					"fontWeight": "bold",
+					"stroke": "#1e90ff"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Select a PDF file",
+					"top": 225,
+					"left": 75,
+					"width": 110,
+					"height": 25,
+					"fontWeight": "bold",
 					"stroke": "#1e90ff"
 				}
 			},
@@ -396,7 +416,7 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 7782,
+	"geometryStamp": 7910,
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
 	"menuBar": "Menu Bar #1"
