@@ -1,4 +1,5 @@
 {
 	"use_system": false,
-	"custom_path": "/toto/"
+	"custom_path": "",
+	"os_version": "macOS 14.5.0 (23F79)"
 }
