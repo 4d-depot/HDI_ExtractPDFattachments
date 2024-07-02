@@ -33,7 +33,7 @@ Case of
 		$options.blog:="blog.4d.com"
 		$options.info:="PDF Attachements"  //ex : "4D View Pro feature"
 		
-		$options.minimumVersion:="2050"  // 2040 means 20R4   2003 means 20.3 (do not use !)
+		$options.minimumVersion:="2060"  // 2060 means 20R6   2003 means 20.3 (do not use !)
 		
 		//$options.license:=4D Write license  // IF ANY NEEDED
 		

@@ -5,6 +5,10 @@ var $picture : Picture
 Form:C1466.pictureContainer:=$pict
 Form:C1466.textContainer:=""
 
+If (Form:C1466.trace)
+	TRACE:C157
+End if 
+
 If (Form:C1466.currentAttachment#Null:C1517)
 	
 	$c:=Form:C1466.currentAttachment

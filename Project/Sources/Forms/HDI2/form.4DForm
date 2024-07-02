@@ -270,7 +270,7 @@
 				},
 				"Button1": {
 					"type": "button",
-					"text": "Load any PDF without attachment…",
+					"text": "Load any PDF…",
 					"top": 220,
 					"left": 360,
 					"width": 260,
@@ -301,7 +301,7 @@
 				},
 				"Button2": {
 					"type": "button",
-					"text": "Manage error",
+					"text": "Manage error…",
 					"top": 220,
 					"left": 650,
 					"width": 140,
