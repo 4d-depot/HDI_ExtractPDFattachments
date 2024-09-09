@@ -64,7 +64,7 @@
 					"shortcutKey": "[Return]",
 					"text": "Demo",
 					"class": "default1",
-					"focusable": false,
+					"focusable": true,
 					"defaultButton": true,
 					"events": [
 						"onClick"
