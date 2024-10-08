@@ -56,7 +56,7 @@
 		},
 		{
 			"objects": {
-				"RTA_Text": {
+				"RTA_Text_1": {
 					"type": "input",
 					"top": 70,
 					"left": 60,
@@ -86,7 +86,7 @@
 		},
 		{
 			"objects": {
-				"RTA_Text1": {
+				"RTA_Text_2": {
 					"type": "input",
 					"top": 70,
 					"left": 60,
@@ -394,7 +394,7 @@
 				}
 			},
 			"entryOrder": [
-				"RTA_Text1",
+				"RTA_Text_2",
 				"Button",
 				"List Box",
 				"PictContainer",
@@ -416,7 +416,7 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 7910,
+	"geometryStamp": 7912,
 	"windowSizingX": "fixed",
 	"windowSizingY": "fixed",
 	"menuBar": "Menu Bar #1"
